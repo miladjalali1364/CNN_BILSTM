@@ -51,7 +51,7 @@ def clean(text):
 Data_f = pd.read_excel('8tag.xlsx', index_col=False)
 Data_f['clean'] = Data_f['caption'].apply(lambda x:clean(x))
 #%%
-with open(r'C:\Users\yousefi-pc\PycharmProjects\Sentiment_Analysis\CNN_BiLSTM_6_tokenizer.pickle', 'rb') as handle:
+with open(r'C:\Users\......\PycharmProjects\Sentiment_Analysis\CNN_BiLSTM_6_tokenizer.pickle', 'rb') as handle:
     tokenizer = pickle.load(handle)
 encode_Data_Trian = tokenizer.texts_to_sequences(Data_f['clean'])
 
