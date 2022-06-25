@@ -1,15 +1,3 @@
-# import pickle
-# import keras
-#
-#
-#
-# print('ok')
-# # Load model
-# filename = r'C:\Users\yousefi-pc\PycharmProjects\Sentiment_Analysis\CNN_LSTM.h5'
-# model = keras.models.load_model(filename)
-# print('ok')
-#
-#
 # # ********************************************************************
 import pickle
 import itertools
@@ -56,11 +44,6 @@ with open(r'C:\Users\......\PycharmProjects\Sentiment_Analysis\CNN_BiLSTM_6_toke
 encode_Data_Trian = tokenizer.texts_to_sequences(Data_f['clean'])
 
 Data_Trian_p = pad_sequences(encode_Data_Trian,maxlen=100,padding='post')
-
-
-
-#%% Read excel file
-
 
 # Load model
 filename = r'CNN_LSTM_2_branch.h5'
